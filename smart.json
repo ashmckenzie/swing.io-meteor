@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "foundation": {},
+    "router": {},
+    "npm": {},
+    "iron-router": {},
+    "spin": {}
+  }
+}

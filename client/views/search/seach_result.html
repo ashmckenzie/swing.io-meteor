@@ -1,0 +1,18 @@
+<template name="searchResult">
+  <div class="row">
+    <div class="large-2 columns">
+      <img src="{{album.image}}" alt="{{album.name}}" />
+    </div>
+
+    <div class="large-9 columns">
+      <div class="artist-name">{{artist.name}}</div>
+      <div class="album-name">{{album.name}}</div>
+      <div class="track-name">{{track.name}}</div>
+    </div>
+
+    <div class="large-1 columns">
+      <div><a href="#" class="add-track">add track</a></div>
+      <!-- <div><a href="#" class="play-track" data-track-key="{{track.key}}">play track</a></div> -->
+    </div>
+  </div>
+</template>
