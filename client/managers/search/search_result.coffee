@@ -8,12 +8,6 @@ Template.searchResult.events
   "click a.add-track": (e) ->
     e.preventDefault()
 
-    track =
-      artist:
-        name: $(e.target).find("[name=name]").val()
-      album:
-        name: $(e.target).find(".album-name]").val()
-
-    Meteor.call 'newTrack', track, (error, id) ->
+    Meteor.call 'addTrack', @, (error, id) ->
       if (!error)
-        debugger
+        console.log(id)
