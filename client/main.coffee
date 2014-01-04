@@ -8,5 +8,5 @@
       Session.set('search_results', results)
 
 Deps.autorun ->
-  # if query = Session.get('search_query')
-  #   Session.set('search_results', rdioSearch(query))
+  if query = Session.get('search_query')
+    Session.set('search_results', rdioSearch(query))

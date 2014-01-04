@@ -2,8 +2,11 @@ Template.newPlayer.rendered = ->
   R.ready ->
     console.log 'rdio player ready..'
 
-    $('#pause').click ->
-      R.player.togglePause()
+    $('#play-pause').click ->
+      if R.player.playingTrack()
+        R.player.togglePause()
+      else
+        TrackCollection.find().fetch()[0].play()
 
     R.player.on 'change:playingTrack', (track) ->
       $('#track').html(track.get('name'))

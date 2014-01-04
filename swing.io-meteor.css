@@ -10,3 +10,22 @@
 #position {
   width: 0;
 }
+
+.playlist {
+  clear: both;
+  list-style: none;
+  padding-top: 40px;
+}
+
+.playlist .track {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.playlist .track p {
+  margin: 0;
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

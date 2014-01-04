@@ -16,6 +16,7 @@ Track:: =
 
 Meteor.methods
   addTrack: (attrs) ->
+
     track = _.extend(_.pick(attrs, 'artist', 'album'),
       key: attrs.track.key,
       name: attrs.track.name,
@@ -24,4 +25,4 @@ Meteor.methods
       createdAt: new Date().getTime()
     )
 
-    track._id = Track.insert(track)
+    track._id = TrackCollection.insert(track)
